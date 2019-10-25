@@ -2,6 +2,20 @@
 <html lang="en-us">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js">
+        // $('.carousel-conatiner').flickity({
+        //     // options
+        //     cellAlign: 'left',
+        //     contain: true
+        // });
+        // var elem = document.querySelector('.carousel-conatiner');
+        // var flkty = new Flickity(elem, {
+        //     // options
+        //     cellAlign: 'left',
+        //     contain: true
+        // });
+    </script>
     <link rel="stylesheet" href="stylesheet.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3120b452eb.js" crossorigin="anonymous"></script>
@@ -64,13 +78,33 @@
         </div>
     </div>
 
-    <div class="carousel-conatiner">
-        <div class="carousel-items">
-            <img src="Images/checked-stretch-dress.jpg" alt="check-dress" class="carousel-items">
-            <!-- <img src="images/blue-hipster-backpack.jpg" alt="hip-backpack" class="carousel-items"> -->
-            <!-- <img src="images/demin-overall-shorts.jpg" alt="overall-short" class="carousel-items"> -->
-            <!-- <img src="images/pink-dotted-dress.jpg" alt="pink-dress" class="carousel-items"> -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+
+        <div class="carousel-cell">
+            <img src="Images/checked-stretch-dress.jpg" alt="check-dress">
         </div>
+        <div class="carousel-cell">
+            <img src="images/blue-hipster-backpack.jpg" alt="hip-backpack">
+        </div>
+        <div class="carousel-cell">
+            <img src="images/demin-overall-shorts.jpg" alt="overall-short">
+        </div>
+        <div class="carousel-cell">
+            <img src="images/pink-dotted-dress.jpg" alt="pink-dress">
+        </div>
+        <div class="carousel-cell">
+            <img src="images/stretch-knit-dress.jpg" alt="checked-black-dress">
+        </div>
+        <div class="carousel-cell">
+            <img src="images/blue-silk-dress.jpg" alt="blue-dress">
+        </div>
+        <div class="carousel-cell">
+            <img src="images/cotton-blue-shirt.jpg" alt="blue-shirt">
+        </div>
+        <div class="carousel-cell">
+            <img src="images/cotton-yellow-tshirt.jpg" alt="yellow-shirt">
+        </div>
+    </div>
     </div>
 
     <div class="sign-up-conatiner">
@@ -82,31 +116,31 @@
                     tips from our blog. Unsubscribe at any time.</h2>
             </center>
         </div>
-
-        <div class="email-input">
-            <input class="email-text-input" type="text" placeholder="Your Email">
-            <button class="input-subscribe-button">Subscribe</button>
-        </div>
     </div>
 
-    <footer class="footer-container">
-        <div class="social-icons">
-            <a href="https://www.facebook.com/" target="_blank" class="social-text-names"><i
-                    class="fab fa-facebook-f fa-1x"></i></a>
-            <a href="https://www.twitter.com/" target="_blank" class="social-text-names"><i
-                    class="fab fa-twitter fa-1x"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" class="social-text-names"><i
-                    class="fab fa-instagram fa-1x"></i></a>
-            <a href="https://www.pinterest.ca/" target="_blank" class="social-text-names"><i
-                    class="fab fa-pinterest fa-1x"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g fa-1x" class="social-text-names"></i></a>
-        </div>
+    <div class="email-input">
+        <input class="email-text-input" type="text" placeholder="Your Email">
+        <input type="submit" value="Subscribe" class="input-subscribe-button">
+    </div>
+
+    <div class="footer-container">
         <div class="footer-contact-info">
             <h3>&copy; 2016 Aloha Apparel Co.<br>Powered by HTML and CSS.</h3>
             <h4>604-604-6040. <a href="#" target="_blank">Info@alohaapparel.com</a></h4>
             <p class="footer-address ">1490 W Broadway<br>Vancouver, BC, Canada</p>
         </div>
-    </footer>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank" class="social-text-names"><i
+                class="fab fa-facebook-f fa-1x"></i></a>
+        <a href="https://www.twitter.com/" target="_blank" class="social-text-names"><i
+                class="fab fa-twitter fa-1x"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-text-names"><i
+                class="fab fa-instagram fa-1x"></i></a>
+        <a href="https://www.pinterest.ca/" target="_blank" class="social-text-names"><i
+                class="fab fa-pinterest fa-1x"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g fa-1x" class="social-text-names"></i></a>
+    </div>
 
     <!-- &nbsp Facebook
         &nbsp Twitter

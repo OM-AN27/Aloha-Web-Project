@@ -244,11 +244,11 @@ table {
      justify-content: space-between;
      flex-wrap: nowrap;
      background-color: white;
-     border-bottom: 1px solid #969696;
-     /* border-radius: 5%; */
-    
-     
+     border-bottom: 1px solid #d7d7d7;
+         
+
     }
+
     
  nav .nav-container {
 
@@ -334,7 +334,6 @@ nav .Cart-nav-logo {
 
 .hand-crafted-text {
     font-family: "playfair display italic";
-    /* text-align: center; */
     position: absolute;
     font-size: 30px;
     top: 83%;
@@ -378,7 +377,6 @@ nav .Cart-nav-logo {
 
   .item {
     color: white;
-    /* flex: 1 0 25%; */
     background-size: cover;
     font-family: 'raleway', sans-serif;
     font-size: 18px;
@@ -400,6 +398,7 @@ nav .Cart-nav-logo {
     width: 50%;
     height: 200px;
     border-bottom: 8px solid white;
+    /* border-right: 8px solid white ; */
 
     
   }
@@ -449,16 +448,16 @@ nav .Cart-nav-logo {
 
 .carousel-conatiner {
     /* display: flex; */
-    height: 200px;
+    height: 700px;
     background-color:white;
     border-bottom: 5px solid white;
 }
 
-.carousel-items {
+/* .carousel-items {
     display: flex;
-    justify-content: space-between;
-    height: 100px;
-}
+    justify-content: center;
+    height: 236px;
+} */
 
 
 .sign-up-conatiner {
@@ -467,7 +466,7 @@ nav .Cart-nav-logo {
     background-image: url("Images/wave-bkgd.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border-bottom: 5px solid white;
+    border-bottom: 10px solid white;
 
 }
 
@@ -477,7 +476,7 @@ nav .Cart-nav-logo {
     color: white;
     font-size: 35px;
     /* line-height: 54px; */
-    top: 311%;
+    top: 383%;
     left: 14%;
     text-shadow: 0 0 6px rgba(0,0,0,0.8)
 
@@ -489,7 +488,7 @@ nav .Cart-nav-logo {
     font-family: "raleway";
     color: white;
     font-size: 16px;
-    top: 322%;
+    top: 394%;
     left: 6%;
     text-shadow: 0 0 6px rgba(0,0,0,0.8)
 
@@ -500,47 +499,70 @@ nav .Cart-nav-logo {
     font-weight: 600;
 }
 
-/* input {
-
-   padding: 10px;
-    border-radius: 30%;
-    border: thin;    
-
+ .input-subscribe-button {
+    /* width: 100%; */
+    border: none;
+    position: relative;
+    left: 65.3%;
+    bottom: 37px;
+    background-color: #e2574c;
+    border-radius: 50px;
+    padding: 11px 22px 8px 22px;
+    font-weight: 300;
+    color: #ffffff;
 }
 
- button {
-    color: white;
-    font-family: "playfairdisplay";
-   background-color: #e2574c;
-   border: thin;
-   padding: 10px;
-   border-radius: 60%;
-} */
+
+.email-input {
+    position: absolute;
+    left:  7%;
+    top : 417%;
+}
+
+.email-text-input {
+    /* width: 100%; */
+    border: none;
+    position: relative;
+    background-color:white;
+    border-radius: 50px;
+    padding: 12px 183px 12px 21px;
+    font-weight: 300;
+    /* color: #ffffff; */
+}
+
 
 
 .footer-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* line-height: 25px; */
-    height: 200px;
-    background-color: black;
+    height: 300px;
+    background-color: #242424;
+    padding-left: 6px;
 }
 
 .social-icons a {
     color: white;
 }
 
+.social-icons {
+    position: absolute;
+    word-spacing: 15px;
+    top: 472%;
+    left: 33%;
+}
+
 .footer-contact-info {
     font-family: "playfair display", Arial, Helvetica, sans-serif;
     font-size: 14px;
+    line-height: 18px;
     font-weight: 500;
     text-align: center;
     color: white;
-    /* line-height: 20px; */
 }
 
 .footer-contact-info h4 {
+
     line-height: 50px;
     color: white;
 }
@@ -550,7 +572,7 @@ nav .Cart-nav-logo {
 }
 
 .footer-contact-info p {
-    line-height: 20px;
+    line-height: 24px;
     color:grey;
 }
 
