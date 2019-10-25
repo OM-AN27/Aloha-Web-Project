@@ -450,7 +450,7 @@ nav .Cart-nav-logo {
 .carousel-conatiner {
     /* display: flex; */
     height: 200px;
-    background-color:black;
+    background-color:white;
     border-bottom: 5px solid white;
 }
 
@@ -462,11 +462,13 @@ nav .Cart-nav-logo {
 
 
 .sign-up-conatiner {
-    height: 350px;
+    height: 300px;
     /* background-color: red; */
     background-image: url("Images/wave-bkgd.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border-bottom: 5px solid white;
+
 }
 
 .sign-up-data  h1{
@@ -517,6 +519,10 @@ nav .Cart-nav-logo {
 
 
 .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* line-height: 25px; */
     height: 200px;
     background-color: black;
 }
@@ -525,4 +531,26 @@ nav .Cart-nav-logo {
     color: white;
 }
 
+.footer-contact-info {
+    font-family: "playfair display", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    /* line-height: 20px; */
+}
+
+.footer-contact-info h4 {
+    line-height: 50px;
+    color: white;
+}
+
+.footer-contact-info a {
+    color: white;
+}
+
+.footer-contact-info p {
+    line-height: 20px;
+    color:grey;
+}
 
