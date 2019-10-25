@@ -379,7 +379,6 @@ nav .Cart-nav-logo {
   .item {
     color: white;
     /* flex: 1 0 25%; */
-    /* background-color: orange; */
     background-size: cover;
     font-family: 'raleway', sans-serif;
     font-size: 18px;
@@ -470,7 +469,7 @@ nav .Cart-nav-logo {
     background-size: 100% 100%;
 }
 
-.sign-up-text  h1{
+.sign-up-data  h1{
     position: absolute;
     font-family: "playfair display italic";
     color: white;
@@ -482,7 +481,7 @@ nav .Cart-nav-logo {
 
 }
 
-.sign-up-text  h2{
+.sign-up-data  h2{
     position: absolute;
     line-height: 32px;
     font-family: "raleway";
@@ -494,9 +493,36 @@ nav .Cart-nav-logo {
 
 }
 
-.sign-up-text  span{
+.sign-up-data  span{
     font-family: "playfair display";
     font-weight: 600;
+}
+
+/* input {
+
+   padding: 10px;
+    border-radius: 30%;
+    border: thin;    
+
+}
+
+ button {
+    color: white;
+    font-family: "playfairdisplay";
+   background-color: #e2574c;
+   border: thin;
+   padding: 10px;
+   border-radius: 60%;
+} */
+
+
+.footer-container {
+    height: 200px;
+    background-color: black;
+}
+
+.social-icons a {
+    color: white;
 }
 
 
