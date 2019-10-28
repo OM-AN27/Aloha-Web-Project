@@ -238,6 +238,11 @@ table {
 
  /* CSS CODE  */
 
+ html {
+     scroll-behavior: smooth;
+     
+ }
+
  nav {
 
      display: flex;
@@ -245,28 +250,25 @@ table {
      flex-wrap: nowrap;
      background-color: white;
      border-bottom: 1px solid #d7d7d7;
-         
-
+     
     }
-
     
- nav .nav-container {
-
-    height: 100px;
-    width: 100%;
+    
+    nav .nav-container {
+        width: 100%;
 
  }
 
 nav .Aloha-nav-logo {
 
      width: 130px;
-     margin: 20px
+     margin: 20px;
  }
 
 nav .Cart-nav-logo {
 
     width: 50px;
-    margin: 20px
+    margin: 20px;
 
 }
 
@@ -278,12 +280,44 @@ nav .Cart-nav-logo {
     font-weight: 300;
     font-family: 'raleway-bold', sans-serif;
     display: inline-block;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 15px  0  15px  40px ;
 
 }
 
+.nav-list a {
+    text-decoration: none;
+}
+
+/* RESPONSIVE NAV */
+
+@media screen and (min-width: 600px){
+
+    .nav-list  ul li{
+        padding: 15px 0 15px 75px;
+    }
+
+}
+
+@media screen and (min-width: 1240px) {
+    nav {
+        border-bottom: none;
+    }
+
+    .nav-list ul li {
+    position: relative;
+    left: 24%;
+    font-size: 20px;
+    bottom: 90px;
+    padding-top: 43px;
+    }
+  
+}
+
+
+
 .index-banner {
+    /* width: 100%; */
     background-image: url("Images/flower-bkgd.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -296,15 +330,13 @@ nav .Cart-nav-logo {
     width: 100px;
     top: 33.5%;
     left: 36%;
-
+    
 }
 
-/* .banner-container {
-    background-image: linear-gradient();
-} */
+
 
 .banner-text-1 {
-
+    
     font-family: 'Raleway', serif; 
     font-size: 16px;
     font-weight: 500;
@@ -312,11 +344,11 @@ nav .Cart-nav-logo {
     text-align: center;
     transform: translateY(700%);
     text-shadow: 0 0 6px rgba(0,0,0,0.8);
-
+    
 }
 
 .banner-text-2 {
-
+    
     font-family: 'Playfair Display', serif;
     font-size: 30px;
     font-weight: 500;
@@ -324,8 +356,46 @@ nav .Cart-nav-logo {
     text-align: center;
     transform: translateY(210%);
     text-shadow: 0 0 6px rgba(0,0,0,0.8)
+    
+}
+
+/* RESPONSIVE HERO BANNER */
+
+@media screen and (min-width: 600px){
+
+    .index-banner img {
+        left: 41%;
+        top: 33.5%;
+        /* text-align: initial; */
+
+    }
 
 }
+
+@media screen and (min-width: 1240px) {
+
+    .index-banner img {
+        top: 18.6%;
+        width: 234px;
+        left: 41%;
+    }
+
+    .index-banner {
+        height: 580px;
+    }
+
+    .banner-text-1{
+        transform: translateY(427%);
+        font-size: 34px;
+    }
+
+    .banner-text-2 {
+        font-size: 60px;
+         transform: translateY(140%);
+
+    }
+}
+
 
 .after-banner-container {
     background-color: white;
@@ -336,7 +406,7 @@ nav .Cart-nav-logo {
     font-family: "playfair display italic";
     position: absolute;
     font-size: 30px;
-    top: 83%;
+    top: 85%;
     left: 20%;
 
 }
@@ -355,7 +425,7 @@ nav .Cart-nav-logo {
 .hand-crafted-text-2 {
     font-family: "Raleway", "arial", sans-serif;
     position: absolute;
-    top:92%;
+    top:95%;
     left: 9%;
     font-size: 16px;
     font-weight: 500;
@@ -363,6 +433,35 @@ nav .Cart-nav-logo {
     line-height: 30px; 
     
 } 
+
+@media screen and (min-width: 600px){
+
+    .hand-crafted-text {
+        left: 29%;
+
+    }
+    .hand-crafted-text-2 {
+        left: 22%;
+    }
+
+}
+
+@media screen and (min-width: 1240px) {
+
+    .hand-crafted-text {
+    font-size: 40px;
+    top: 85%;
+    left: 38%;
+    }
+
+    .hand-crafted-text-2 {
+        font-size: 24px;
+        left: 30%;
+        top: 92%;
+        /* max-width: 900px; */
+    }
+
+}
 
 
 .clothing-categories-links {
@@ -446,23 +545,119 @@ nav .Cart-nav-logo {
 }
 
 
+@media screen and (min-width: 600px) {
+
+    .clothing-categories-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: white;
+        box-sizing: border-box;
+        text-align: center;
+        height: 500px;
+    
+    }
+    
+    .clothing-categories-links p {
+        transform: translateY(400%);
+    }
+    
+    
+      .item {
+        color: white;
+        background-size: cover ;
+        font-family: "raleway", sans-serif;
+        font-size: 35px;
+        height: 300px;
+        flex: 1 0 25%;
+        text-transform: uppercase;
+       box-sizing: border-box;
+       border: 3px solid white;
+        
+      }
+    
+      .item.wide {
+        flex: 2 0 50%;
+        width: 50%;
+    
+      }
+
+
+}
+
+@media screen and (min-width: 1240px) {
+
+    .item.wide {
+        height: 300px;
+    }
+
+}
+
+
+.carousel-title {
+    font-size: 28px;
+    text-align: center;
+    font-family: "playfair display italic", Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;    
+}
+
+.carousel-title span {
+    font-family:"playfair display-bold";
+
+}
+
+
 .carousel-conatiner {
-    /* display: flex; */
-    height: 700px;
+    height: 500px;
     background-color:white;
     border-bottom: 5px solid white;
 }
 
-/* .carousel-items {
-    display: flex;
-    justify-content: center;
-    height: 236px;
-} */
+.carousel-cell{
+    height: 450px;
+   
+}
+
+.carousel-cell span {
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 12px;
+}
+
+.carousel-cell p {
+    font-family: "playfair display", Arial, Helvetica, sans-serif;    
+    text-align: center;
+    line-height: 25px;
+    color:  #e2574c;
+}
+
+.carousel-cell .prices {
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+}
+
+.flickity-button {
+    display: none;
+}
 
 
 .sign-up-conatiner {
     height: 300px;
-    /* background-color: red; */
     background-image: url("Images/wave-bkgd.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -475,8 +670,7 @@ nav .Cart-nav-logo {
     font-family: "playfair display italic";
     color: white;
     font-size: 35px;
-    /* line-height: 54px; */
-    top: 383%;
+    top: 362%;
     left: 14%;
     text-shadow: 0 0 6px rgba(0,0,0,0.8)
 
@@ -488,7 +682,7 @@ nav .Cart-nav-logo {
     font-family: "raleway";
     color: white;
     font-size: 16px;
-    top: 394%;
+    top: 373%;
     left: 6%;
     text-shadow: 0 0 6px rgba(0,0,0,0.8)
 
@@ -501,33 +695,70 @@ nav .Cart-nav-logo {
 
  .input-subscribe-button {
     /* width: 100%; */
+    /* position: relative; */
     border: none;
-    position: relative;
-    left: 65.3%;
-    bottom: 37px;
-    background-color: #e2574c;
     border-radius: 50px;
     padding: 11px 22px 8px 22px;
+    left: 65.5%;
+    bottom: 37px;
+    background-color: #e2574c;
     font-weight: 300;
-    color: #ffffff;
+    color: white;
 }
 
 
 .email-input {
     position: absolute;
     left:  7%;
-    top : 417%;
+    top : 394%;
 }
 
 .email-text-input {
     /* width: 100%; */
-    border: none;
     position: relative;
-    background-color:white;
+    border: none;
     border-radius: 50px;
-    padding: 12px 183px 12px 21px;
+    padding: 13px 183px 11px 21px;
+    background-color:white;
     font-weight: 300;
-    /* color: #ffffff; */
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .sign-up-data h1 {
+        top: 303%;
+        left: 24%;
+    }
+
+    .sign-up-data h2 {
+        top: 314%;
+        left: 19%;
+    }
+
+    .email-input {
+        top: 340%;
+        left: 12%;
+    }
+
+}
+
+@media screen and (min-width:1240px) {
+    .sign-up-data h1 {
+        top: 217%;
+        left: 39%;
+    }
+    .sign-up-data h2 {
+        top: 225%;
+        left: 36%;
+    }
+
+    .email-input {
+        top: 238%;
+        left: 33%;
+    }
+
+
 }
 
 
@@ -548,7 +779,7 @@ nav .Cart-nav-logo {
 .social-icons {
     position: absolute;
     word-spacing: 15px;
-    top: 472%;
+    top: 457%;
     left: 33%;
 }
 
@@ -576,3 +807,18 @@ nav .Cart-nav-logo {
     color:grey;
 }
 
+@media screen and (min-width: 600px) {
+    .social-icons {
+        top: 397%;
+        left: 38%;
+
+    }
+}
+
+@media screen and (min-width:1240px) {
+    .social-icons {
+        top: 273%;
+        left: 44%;
+
+    }
+}
