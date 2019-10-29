@@ -409,14 +409,17 @@ ul {
     text-align: center;
     background-size: cover;
     font-family: 'raleway', sans-serif;
-    /* filter: brightness(0.8); */
     font-size: 18px;
     text-transform: uppercase;
     flex: 1 0 50%;
     width: 50%;
     height: 200px;
-    border-bottom: 8px solid white;
     
+}
+
+.item:hover {
+    filter: brightness(0.8);
+    transition: 0.5s all;
 }
 
 .item.wide {
@@ -435,7 +438,6 @@ ul {
         position: relative;
         background-image: url("images/mens-category.jpg");
         background-repeat: no-repeat;
-        border-bottom: 8px solid white;
 }
 
 .item.trends {
@@ -476,6 +478,7 @@ section#featured {
 
 
 .carousel-title {
+    margin: 15px;
     font-size: 28px;
     text-align: center;
     font-family: "playfair display italic", Arial, Helvetica, sans-serif;
@@ -591,35 +594,6 @@ section#featured {
 
 }
 
-/* UPDATES  */
-
-@media screen and (min-width: 600px) {
-
-
-}
-
-@media screen and (min-width:1240px) {
-
-    .sign-up-data h1 {
-
-            font-size: 50px;
-     
-    }
-    .sign-up-data h2 {
-
-        line-height: 40px;
-        font-size: 30px;
-        max-width: 100%;
-       
-    }
-
-    .email-input {
-     
-    }
-
-
-}
-
 
 /* FOOTER INFO SOCIALS  */
 
@@ -639,7 +613,6 @@ section#featured {
     order: 1;
     font-family: "playfair display", Arial, Helvetica, sans-serif;
     font-size: 14px;
-    /* line-height: 50px; */
     font-weight: 500;
     text-align: center;
     color: white;
@@ -660,8 +633,12 @@ section#featured {
 .social-icons {
     order: 3;
     margin-top: 35px;
-    word-spacing: 15px;
   
+
+}
+
+.social-icons li {
+    margin-left: 15px;
 }
 
 .social-icons span {
@@ -679,32 +656,6 @@ section#featured {
 
 
 
-@media screen and (min-width: 600px) {
-
-    .footer-container {
-
-    }
-
-    .social-icons {
-    
-
-    }
-
-    .social-icons span {
-    font-family: 'raleway', Arial, Helvetica, sans-serif;
-    font-size: 24px;
-
-    }
-
-}
-
-@media screen and (min-width:1240px) {
-    .social-icons {
-
-    }
-}
-
-
 /* RESPONSIVE @MEDIA   ---------------------------------------------------------------> */
 
 /* NAV */
@@ -717,6 +668,7 @@ section#featured {
 
     nav .Aloha-nav-logo{
         order: 1;
+        width: 110px;
     }
 
     .nav-list {
@@ -727,6 +679,7 @@ section#featured {
 
     nav .Cart-nav-logo {
         order: 3;
+        width: 40px;
     }
 
 
@@ -795,20 +748,16 @@ section#featured {
     }
     
     .clothing-categories-links p {
-        transform: translateY(400%);
+        transform: translateY(395%);
+        font-size: 24px;
     }
     
     
       .item {
-        color: white;
         background-size: cover ;
-        font-family: "raleway", sans-serif;
         font-size: 35px;
         height: 200px;
         flex: 1 0 25%;
-        text-transform: uppercase;
-       box-sizing: border-box;
-       border: 3px solid white;
         
       }
     
@@ -864,4 +813,98 @@ section#featured {
         width: 25%;
     }
     
+}
+
+
+
+/* UPDATES  */
+
+@media screen and (min-width: 600px) {
+
+    .sign-up-data  h1{
+        
+        font-size: 40px;
+        
+    
+    }
+
+    .sign-up-data  h2{
+        margin: 30px auto;
+        line-height: 35px;
+        font-size: 20px;
+        
+    
+    }
+
+
+}
+
+
+@media screen and (min-width:1240px) {
+
+    .sign-up-data h1 {
+
+            font-size: 50px;
+     
+    }
+    .sign-up-data h2 {
+
+        line-height: 40px;
+        font-size: 30px;
+        max-width: 100%;
+       
+    }
+
+
+}
+
+
+/* FOOTER  */
+
+@media screen and (min-width: 600px) {
+
+
+    .footer-container {
+        align-items: flex-start;
+    }
+ 
+    .footer-contact-info {
+        margin: 15px;
+        font-size: 16px;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    
+    .social-icons span {
+
+        font-family: 'raleway', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        display: block;
+        
+    }
+    
+    .social-icons {
+        
+        font-size: 16px;
+        display: block;
+        align-items: flex-end;
+
+    }
+}
+
+@media screen and (min-width:1240px) {
+
+    .footer-container {
+        align-items: flex-start;
+    }
+ 
+    .footer-contact-info {
+        margin: 10px;
+        font-size: 16px;
+        text-align: left;
+        justify-content: flex-start;
+
+    }
+
 }
