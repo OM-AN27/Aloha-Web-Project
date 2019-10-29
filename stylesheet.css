@@ -445,36 +445,36 @@ ul {
     
     .item.men {
         position: relative;
-        background-image: url("images/mens-category.jpg");
+        background-image: url("Images/mens-category.jpg");
         background-repeat: no-repeat;
 }
 
 .item.trends {
     position: relative;
-    background-image: url("images/trends-category.jpg");
+    background-image: url("Images/trends-category.jpg");
 
 }
 .item.glasses {
     position: relative;
-    background-image: url("images/glasses-category.jpg");
+    background-image: url("Images/glasses-category.jpg");
     
 }
 .item.sale {
     position: relative;
-    background-image: url("images/sale-category.jpg");
+    background-image: url("Images/sale-category.jpg");
     
 }
 
 .item.bags{
     position: relative;
-    background-image: url("images/bags-category.jpg");
+    background-image: url("Images/bags-category.jpg");
     
     
 }
 
 .item.women{
     position: relative;
-    background-image: url("images/womens-category.jpg");
+    background-image: url("Images/womens-category.jpg");
 
 }
 
