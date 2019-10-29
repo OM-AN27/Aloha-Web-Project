@@ -285,10 +285,8 @@ ul {
 }
 
 .nav-list ul li {
-    /* display: inline-flex; */
-    /* justify-content: center; */
+
     font-family: 'raleway-bold', sans-serif;
-    /* justify-content: space-evenly; */
     font-size: 13px;
     font-weight: 300;
     padding: 15px  0  ;
@@ -303,46 +301,6 @@ ul {
 
 }
 
-/* RESPONSIVE NAV */
-
-@media screen and (min-width: 600px){
-
-
-    nav {
-        align-items: center;
-    }
-
-    nav .Aloha-nav-logo{
-        order: 1;
-    }
-
-    .nav-list {
-        border: none;
-        order: 2;
-        width: 50%;
-    }
-
-    nav .Cart-nav-logo {
-        order: 3;
-    }
-
-
-}
-
-@media screen and (min-width: 1240px) {
-    nav {
-        border-bottom: none;
-    }
-
-    .nav-list ul li {
-    position: relative;
-    left: 24%;
-    font-size: 20px;
-    bottom: 90px;
-    padding-top: 43px;
-    }
-  
-}
 
 /* HERO BANNER  */
 
@@ -396,43 +354,6 @@ ul {
     
 }
 
-/* RESPONSIVE HERO BANNER */
-
-/* @media screen and (min-width: 600px){
-
-    .index-banner img {
-        left: 41%;
-        top: 33.5%;
-        text-align: initial;
-
-    }
-
-} 
-
-/* 
-@media screen and (min-width: 1240px) {
-
-    .index-banner img {
-        top: 18.6%;
-        width: 234px;
-        left: 41%;
-    }
-
-    .index-banner {
-        height: 580px;
-    }
-
-    .banner-text-1{
-        transform: translateY(427%);
-        font-size: 34px;
-    }
-
-    .banner-text-2 {
-        font-size: 60px;
-         transform: translateY(140%);
-
-    }
-}  */
 
 
 /* INFO SECTION  */
@@ -462,7 +383,6 @@ ul {
 }
 
 
-
 .hand-crafted-text-2 {
     font-family: "Raleway", "arial", sans-serif;
     margin: 0 20px;
@@ -472,35 +392,6 @@ ul {
     line-height: 30px; 
     
 } 
-
-/* @media screen and (min-width: 600px){
-
-    .hand-crafted-text {
-        left: 29%;
-
-    }
-    .hand-crafted-text-2 {
-        left: 22%;
-    }
-
-}
-
-@media screen and (min-width: 1240px) {
-
-    .hand-crafted-text {
-    font-size: 40px;
-    top: 85%;
-    left: 38%;
-    }
-
-    .hand-crafted-text-2 {
-        font-size: 24px;
-        left: 30%;
-        top: 92%;
-        /* max-width: 900px; */
-    }
-
-} */
 
 /* CATERGORIES */
 
@@ -514,19 +405,16 @@ ul {
 }
 
 .item {
-    margin: 0%;
     color: white;
     text-align: center;
     background-size: cover;
     font-family: 'raleway', sans-serif;
-    filter: brightness(0.8);
+    /* filter: brightness(0.8); */
     font-size: 18px;
-    height: 100px;
     text-transform: uppercase;
-    /* width: 100px; */
-    flex: 2 0 50%;
+    flex: 1 0 50%;
     width: 50%;
-    height: 300px;
+    height: 200px;
     border-bottom: 8px solid white;
     
 }
@@ -551,83 +439,34 @@ ul {
 }
 
 .item.trends {
-    /* position: relative; */
+    position: relative;
     background-image: url("images/trends-category.jpg");
 
 }
 .item.glasses {
-    /* position: relative; */
+    position: relative;
     background-image: url("images/glasses-category.jpg");
     
 }
 .item.sale {
-    /* position: relative; */
+    position: relative;
     background-image: url("images/sale-category.jpg");
     
 }
 
 .item.bags{
-    /* position: relative; */
+    position: relative;
     background-image: url("images/bags-category.jpg");
     
     
 }
 
 .item.women{
-    /* position: relative; */
+    position: relative;
     background-image: url("images/womens-category.jpg");
-    /* border-top: 8px solid white; */
 
 }
 
-
-@media screen and (min-width: 600px) {
-
-    .clothing-categories-links{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        background-color: white;
-        box-sizing: border-box;
-        text-align: center;
-        /* height: 500px; */
-    
-    }
-    
-    .clothing-categories-links p {
-        transform: translateY(400%);
-    }
-    
-    
-      .item {
-        color: white;
-        background-size: cover ;
-        font-family: "raleway", sans-serif;
-        font-size: 35px;
-        height: 300px;
-        flex: 1 0 25%;
-        text-transform: uppercase;
-       box-sizing: border-box;
-       border: 3px solid white;
-        
-      }
-    
-      .item.wide {
-        flex: 2 0 50%;
-        width: 50%;
-    
-      }
-
-
-}
-
-@media screen and (min-width: 1240px) {
-
-    .item.wide {
-        height: 300px;
-    }
-
-}
 
 /* SHOP CAROUSEL  */
 
@@ -640,8 +479,7 @@ section#featured {
     font-size: 28px;
     text-align: center;
     font-family: "playfair display italic", Arial, Helvetica, sans-serif;
-    /* margin-top: 20px; */
-    /* margin-bottom: 10px;     */
+ 
 }
 
 .carousel-title span {
@@ -651,13 +489,11 @@ section#featured {
 
 
 .carousel-conatiner {
-    /* height: 500px; */
     background-color:white;
     border-bottom: 5px solid white;
 }
 
 .carousel-cell{
-    /* height: 450px; */
     width: 100%;
     text-align: center;
    
@@ -684,24 +520,12 @@ section#featured {
 }
 
 
-/* .flickity-page-dots {
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-    line-height: 1;
-}
-
 .flickity-button {
     display: none;
 }
- */
+
 
 /* EMAIL SIGN UP   */
-
 
 .sign-up-conatiner {
     height: 300px;
@@ -715,12 +539,9 @@ section#featured {
 }
 
 .sign-up-data  h1{
-    /* position: absolute; */
     font-family: "playfair display italic";
     color: white;
     font-size: 35px;
-    top: 362%;
-    left: 14%;
     text-shadow: 0 0 6px rgba(0,0,0,0.8)
 
 }
@@ -760,7 +581,6 @@ section#featured {
 }
 
 .email-text-input {
-    /* width: 100%; */
     position: relative;
     border: none;
     border-radius: 50px;
@@ -771,38 +591,30 @@ section#featured {
 
 }
 
+/* UPDATES  */
+
 @media screen and (min-width: 600px) {
 
-    .sign-up-data h1 {
-        top: 303%;
-        left: 24%;
-    }
-
-    .sign-up-data h2 {
-        top: 314%;
-        left: 19%;
-    }
-
-    .email-input {
-        top: 340%;
-        left: 12%;
-    }
 
 }
 
 @media screen and (min-width:1240px) {
+
     .sign-up-data h1 {
-        top: 217%;
-        left: 39%;
+
+            font-size: 50px;
+     
     }
     .sign-up-data h2 {
-        top: 225%;
-        left: 36%;
+
+        line-height: 40px;
+        font-size: 30px;
+        max-width: 100%;
+       
     }
 
     .email-input {
-        top: 238%;
-        left: 33%;
+     
     }
 
 
@@ -814,37 +626,46 @@ section#featured {
 
 .footer-container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     height: 300px;
     background-color: #242424;
-    padding-left: 6px;
 }
+
+
+.footer-contact-info {
+    order: 1;
+    font-family: "playfair display", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /* line-height: 50px; */
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+
+.footer-contact-info h4 {
+    order: 2;
+    line-height: 60px;
+    color: white;
+}
+
 
 .social-icons a {
     color: white;
 }
 
 .social-icons {
-    position: absolute;
+    order: 3;
+    margin-top: 35px;
     word-spacing: 15px;
-    top: 457%;
-    left: 33%;
+  
 }
 
-.footer-contact-info {
-    font-family: "playfair display", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 500;
-    text-align: center;
-    color: white;
-}
-
-.footer-contact-info h4 {
-
-    line-height: 50px;
-    color: white;
+.social-icons span {
+    display: none;
 }
 
 .footer-contact-info a {
@@ -852,22 +673,195 @@ section#featured {
 }
 
 .footer-contact-info p {
-    line-height: 24px;
+    line-height: 20px;
     color:#969696;
 }
 
+
+
 @media screen and (min-width: 600px) {
-    .social-icons {
-        top: 397%;
-        left: 38%;
+
+    .footer-container {
 
     }
+
+    .social-icons {
+    
+
+    }
+
+    .social-icons span {
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+
+    }
+
 }
 
 @media screen and (min-width:1240px) {
     .social-icons {
-        top: 273%;
-        left: 44%;
 
     }
+}
+
+
+/* RESPONSIVE @MEDIA   ---------------------------------------------------------------> */
+
+/* NAV */
+
+@media screen and (min-width: 600px){
+
+    nav {
+        align-items: center;
+    }
+
+    nav .Aloha-nav-logo{
+        order: 1;
+    }
+
+    .nav-list {
+        border: none;
+        order: 2;
+        width: 50%;
+    }
+
+    nav .Cart-nav-logo {
+        order: 3;
+    }
+
+
+}
+
+@media screen and (min-width: 1240px) {
+
+    nav {
+        border-bottom: none;
+    }
+
+
+}
+
+   
+/* BANNER */
+
+@media screen and (min-width: 600px){
+
+    .index-banner img {
+
+        width: 120px;
+
+    }
+
+} 
+
+@media screen and (min-width: 1240px) {
+
+    .index-banner img {
+      
+        width: 200px;
+    }
+
+    .index-banner {
+        height: 500px;
+        
+    }
+
+    .banner-text-1{
+
+        font-size: 25px;
+       
+    }
+
+    .banner-text-2 {
+
+            font-size: 50px;
+
+    }
+} 
+
+/* SHOP  */
+
+
+@media screen and (min-width: 600px) {
+
+    .clothing-categories-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: white;
+        box-sizing: border-box;
+        text-align: center;
+    
+    }
+    
+    .clothing-categories-links p {
+        transform: translateY(400%);
+    }
+    
+    
+      .item {
+        color: white;
+        background-size: cover ;
+        font-family: "raleway", sans-serif;
+        font-size: 35px;
+        height: 200px;
+        flex: 1 0 25%;
+        text-transform: uppercase;
+       box-sizing: border-box;
+       border: 3px solid white;
+        
+      }
+    
+      .item.wide {
+        flex: 2 0 50%;
+        width: 50%;
+    
+      }
+
+
+}
+
+@media screen and (min-width: 1240px) {
+
+    .item.wide {
+        height: 200px;
+    }
+
+}
+
+
+/* INFO  */
+
+@media screen and (min-width: 1240px) {
+
+    .hand-crafted-text {
+    font-size: 40px;
+    }
+
+    .hand-crafted-text-2 {
+        font-size: 24px;
+        max-width: 850px;
+        line-height: 50px;
+ 
+    }
+
+} 
+
+
+/* SHOP  */
+
+@media screen and (min-width: 600px){
+
+    .carousel-cell {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1240px){
+
+    .carousel-cell {
+        width: 25%;
+    }
+    
 }
