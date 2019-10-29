@@ -239,22 +239,24 @@ table {
  /* CSS CODE  */
 
  html {
+
      scroll-behavior: smooth;
-     
+
  }
 
  nav {
 
      display: flex;
      justify-content: space-between;
-     flex-wrap: nowrap;
+     flex-wrap: wrap;
      background-color: white;
-     border-bottom: 1px solid #d7d7d7;
      
     }
     
     
-    nav .nav-container {
+ nav .nav-container {
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
 
  }
@@ -272,30 +274,58 @@ nav .Cart-nav-logo {
 
 }
 
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list {
+    border-top: 1px solid #d7d7d7;
+    width: 100%;
+}
 
 .nav-list ul li {
-
-    color: #e2574c;
+    /* display: inline-flex; */
+    /* justify-content: center; */
+    font-family: 'raleway-bold', sans-serif;
+    /* justify-content: space-evenly; */
     font-size: 13px;
     font-weight: 300;
-    font-family: 'raleway-bold', sans-serif;
-    display: inline-block;
-    /* margin: 0 auto; */
-    padding: 15px  0  15px  40px ;
-
+    padding: 15px  0  ;
+    
+    
 }
+
 
 .nav-list a {
     text-decoration: none;
+    color: #e2574c;
+
 }
 
 /* RESPONSIVE NAV */
 
 @media screen and (min-width: 600px){
 
-    .nav-list  ul li{
-        padding: 15px 0 15px 75px;
+
+    nav {
+        align-items: center;
     }
+
+    nav .Aloha-nav-logo{
+        order: 1;
+    }
+
+    .nav-list {
+        border: none;
+        order: 2;
+        width: 50%;
+    }
+
+    nav .Cart-nav-logo {
+        order: 3;
+    }
+
 
 }
 
@@ -314,22 +344,29 @@ nav .Cart-nav-logo {
   
 }
 
-
+/* HERO BANNER  */
 
 .index-banner {
-    /* width: 100%; */
-    background-image: url("Images/flower-bkgd.jpg");
+    position: relative;
+    text-align: center;
+    background-image:linear-gradient(90deg ,rgba(88, 88, 88, 0.3) , rgba(73, 73, 73, 0.3)),  url(Images/flower-bkgd.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
 
 }
 
+.banner-container {
+    height: 300px;
+}
+
 .index-banner img {
     position: absolute;
     width: 100px;
-    top: 33.5%;
-    left: 36%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: brightness(0.8);
     
 }
 
@@ -361,17 +398,18 @@ nav .Cart-nav-logo {
 
 /* RESPONSIVE HERO BANNER */
 
-@media screen and (min-width: 600px){
+/* @media screen and (min-width: 600px){
 
     .index-banner img {
         left: 41%;
         top: 33.5%;
-        /* text-align: initial; */
+        text-align: initial;
 
     }
 
-}
+} 
 
+/* 
 @media screen and (min-width: 1240px) {
 
     .index-banner img {
@@ -394,20 +432,23 @@ nav .Cart-nav-logo {
          transform: translateY(140%);
 
     }
-}
+}  */
+
+
+/* INFO SECTION  */
 
 
 .after-banner-container {
+    text-align: center;
     background-color: white;
     height: 225px;
 }
 
 .hand-crafted-text {
     font-family: "playfair display italic";
-    position: absolute;
     font-size: 30px;
-    top: 85%;
-    left: 20%;
+    margin: 40px;
+ 
 
 }
 
@@ -424,17 +465,15 @@ nav .Cart-nav-logo {
 
 .hand-crafted-text-2 {
     font-family: "Raleway", "arial", sans-serif;
-    position: absolute;
-    top:95%;
-    left: 9%;
+    margin: 0 20px;
     font-size: 16px;
     font-weight: 500;
-    color: grey;
+    color: #969696;
     line-height: 30px; 
     
 } 
 
-@media screen and (min-width: 600px){
+/* @media screen and (min-width: 600px){
 
     .hand-crafted-text {
         left: 29%;
@@ -461,27 +500,34 @@ nav .Cart-nav-logo {
         /* max-width: 900px; */
     }
 
-}
+} */
+
+/* CATERGORIES */
 
 
 .clothing-categories-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: black;
     box-sizing: border-box;
-    text-align: center;
     color: white;
-  }
+}
 
-  .item {
+.item {
+    margin: 0%;
     color: white;
+    text-align: center;
     background-size: cover;
     font-family: 'raleway', sans-serif;
+    filter: brightness(0.8);
     font-size: 18px;
     height: 100px;
     text-transform: uppercase;
-    width: 100px;
+    /* width: 100px; */
+    flex: 2 0 50%;
+    width: 50%;
+    height: 300px;
+    border-bottom: 8px solid white;
     
 }
 
@@ -492,15 +538,6 @@ nav .Cart-nav-logo {
     
 }
 
-.item {
-    flex: 2 0 50%;
-    width: 50%;
-    height: 200px;
-    border-bottom: 8px solid white;
-    /* border-right: 8px solid white ; */
-
-    
-  }
   
   .clothing-categories-links p {
       transform: translateY(500%);
@@ -514,31 +551,30 @@ nav .Cart-nav-logo {
 }
 
 .item.trends {
-    position: relative;
+    /* position: relative; */
     background-image: url("images/trends-category.jpg");
-    /* border-right: 3px solid white; */
-    /* border-bottom: 3px solid white; */
+
 }
 .item.glasses {
-    position: relative;
+    /* position: relative; */
     background-image: url("images/glasses-category.jpg");
     
 }
 .item.sale {
-    position: relative;
+    /* position: relative; */
     background-image: url("images/sale-category.jpg");
     
 }
 
 .item.bags{
-    position: relative;
+    /* position: relative; */
     background-image: url("images/bags-category.jpg");
     
     
 }
 
 .item.women{
-    position: relative;
+    /* position: relative; */
     background-image: url("images/womens-category.jpg");
     /* border-top: 8px solid white; */
 
@@ -554,7 +590,7 @@ nav .Cart-nav-logo {
         background-color: white;
         box-sizing: border-box;
         text-align: center;
-        height: 500px;
+        /* height: 500px; */
     
     }
     
@@ -593,13 +629,19 @@ nav .Cart-nav-logo {
 
 }
 
+/* SHOP CAROUSEL  */
+
+section#featured {
+    margin-bottom: 50px;
+}
+
 
 .carousel-title {
     font-size: 28px;
     text-align: center;
     font-family: "playfair display italic", Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    margin-bottom: 10px;    
+    /* margin-top: 20px; */
+    /* margin-bottom: 10px;     */
 }
 
 .carousel-title span {
@@ -609,19 +651,21 @@ nav .Cart-nav-logo {
 
 
 .carousel-conatiner {
-    height: 500px;
+    /* height: 500px; */
     background-color:white;
     border-bottom: 5px solid white;
 }
 
 .carousel-cell{
-    height: 450px;
+    /* height: 450px; */
+    width: 100%;
+    text-align: center;
    
 }
 
 .carousel-cell span {
     font-family: 'raleway', Arial, Helvetica, sans-serif;
-    color: grey;
+    color: #969696;
     font-size: 12px;
 }
 
@@ -634,13 +678,13 @@ nav .Cart-nav-logo {
 
 .carousel-cell .prices {
     font-family: 'raleway', Arial, Helvetica, sans-serif;
-    color: grey;
+    color: #969696;
     font-size: 12px;
     font-weight: 500;
 }
 
 
-.flickity-page-dots {
+/* .flickity-page-dots {
     position: absolute;
     width: 100%;
     bottom: 10px;
@@ -654,10 +698,15 @@ nav .Cart-nav-logo {
 .flickity-button {
     display: none;
 }
+ */
+
+/* EMAIL SIGN UP   */
 
 
 .sign-up-conatiner {
     height: 300px;
+    text-align: center;
+    padding: 50px;
     background-image: url("Images/wave-bkgd.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -666,7 +715,7 @@ nav .Cart-nav-logo {
 }
 
 .sign-up-data  h1{
-    position: absolute;
+    /* position: absolute; */
     font-family: "playfair display italic";
     color: white;
     font-size: 35px;
@@ -677,13 +726,11 @@ nav .Cart-nav-logo {
 }
 
 .sign-up-data  h2{
-    position: absolute;
+    margin: 25px auto;
     line-height: 32px;
     font-family: "raleway";
     color: white;
     font-size: 16px;
-    top: 373%;
-    left: 6%;
     text-shadow: 0 0 6px rgba(0,0,0,0.8)
 
 }
@@ -694,13 +741,9 @@ nav .Cart-nav-logo {
 }
 
  .input-subscribe-button {
-    /* width: 100%; */
-    /* position: relative; */
     border: none;
     border-radius: 50px;
     padding: 11px 22px 8px 22px;
-    left: 65.5%;
-    bottom: 37px;
     background-color: #e2574c;
     font-weight: 300;
     color: white;
@@ -708,9 +751,12 @@ nav .Cart-nav-logo {
 
 
 .email-input {
-    position: absolute;
-    left:  7%;
-    top : 394%;
+    display: inline-flex;
+    margin: 20px auto;
+    border-radius: 50px;
+    padding: 5px 4px 4px 21px;
+    background-color:white;
+    
 }
 
 .email-text-input {
@@ -718,9 +764,10 @@ nav .Cart-nav-logo {
     position: relative;
     border: none;
     border-radius: 50px;
-    padding: 13px 183px 11px 21px;
+    padding: 13px 50px 11px 21px;
     background-color:white;
     font-weight: 300;
+    width: 50%;
 
 }
 
@@ -761,6 +808,8 @@ nav .Cart-nav-logo {
 
 }
 
+
+/* FOOTER INFO SOCIALS  */
 
 
 .footer-container {
@@ -804,7 +853,7 @@ nav .Cart-nav-logo {
 
 .footer-contact-info p {
     line-height: 24px;
-    color:grey;
+    color:#969696;
 }
 
 @media screen and (min-width: 600px) {
