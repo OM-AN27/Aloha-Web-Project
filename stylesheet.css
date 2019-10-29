@@ -238,11 +238,15 @@ table {
 
  /* CSS CODE  */
 
+
+
+
  html {
 
      scroll-behavior: smooth;
 
  }
+
 
  nav {
 
@@ -254,7 +258,7 @@ table {
     }
     
     
- nav .nav-container {
+    nav .nav-container {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -285,7 +289,7 @@ ul {
 }
 
 .nav-list ul li {
-
+    
     font-family: 'raleway-bold', sans-serif;
     font-size: 13px;
     font-weight: 300;
@@ -299,6 +303,11 @@ ul {
     text-decoration: none;
     color: #e2574c;
 
+}
+
+.nav-list a:hover {
+    color: #b64036;
+    transition: 0.4s all;
 }
 
 
@@ -772,8 +781,16 @@ section#featured {
 
 @media screen and (min-width: 1240px) {
 
+    .clothing-categories-links p {
+        transform: translateY(600%);
+    }
+
+    .item {
+        height: 300px;
+    }
+
     .item.wide {
-        height: 200px;
+        height: 300px;
     }
 
 }
