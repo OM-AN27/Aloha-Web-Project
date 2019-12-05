@@ -18,7 +18,7 @@
                 <img src="Images/cart-icon.svg" alt="cart" class="Cart-nav-logo">
                 <div class="nav-list">
                     <ul>
-                        <li><a href="#Info">ABOUT</a></li>
+                        <li><a href="#Info">ABOUT US</a></li>
                         <li><a href="#shop">SHOP</a></li>
                         <li><a href="#featured">FEATURED</a></li>
                         <li><a href="#updates">UPDATES</a></li>
@@ -121,12 +121,12 @@
                     free style
                     tips from our blog. Unsubscribe at any time.</h2>
             </div>
-
-            <div class="email-input">
-                <input class="email-text-input" type="text" placeholder="Your Email">
+            <label class="screen-reader-text" for="email">Enter your email here</label>
+            <form class="email-input">
+                <input class="email-text-input" type="text" id="email" placeholder="Your Email">
                 <input onclick="alert('Thanks for Subscribing!') " type="submit" value="Subscribe"
                     class="input-subscribe-button">
-            </div>
+            </form>
         </div>
     </section>
 
@@ -152,6 +152,8 @@
 
     <script src="https://kit.fontawesome.com/3120b452eb.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js"></script>
+    
 </body>
 
 </html>
