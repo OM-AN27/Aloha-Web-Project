@@ -1,4 +1,4 @@
-#ALOHA WEBSITE
+# ALOHA WEBSITE
 
 Basic one page Website for clothing store
 
