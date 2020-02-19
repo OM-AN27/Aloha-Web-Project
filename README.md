@@ -1,6 +1,6 @@
 # ALOHA WEBSITE
 
-![aloha website](/images/aloha.png)
+![aloha website](images/aloha.png)
 
 Basic one page Website for clothing store
 
