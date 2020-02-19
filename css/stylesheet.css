@@ -244,8 +244,10 @@ table {
  html {
 
      scroll-behavior: smooth;
+     
 
  }
+
 
 
  nav {
@@ -254,6 +256,9 @@ table {
      justify-content: space-between;
      flex-wrap: wrap;
      background-color: white;
+     /* position:fixed; */
+     /* z-index: 1000;
+     width: 100%; */
      
     }
     
@@ -292,6 +297,7 @@ ul {
     
     font-family: 'raleway-bold', sans-serif;
     font-size: 13px;
+    text-transform: uppercase;
     font-weight: 300;
     padding: 15px  0  ;
     
@@ -314,12 +320,14 @@ ul {
 /* HERO BANNER  */
 
 .index-banner {
+
     position: relative;
     text-align: center;
-    background-image:linear-gradient(90deg ,rgba(88, 88, 88, 0.3) , rgba(73, 73, 73, 0.3)),  url(Images/flower-bkgd.jpg);
+    background-image:linear-gradient(90deg ,rgba(88, 88, 88, 0.3) , rgba(73, 73, 73, 0.3)),  url(../Images/flower-bkgd.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
+    margin-top: ;
 
 }
 
@@ -358,8 +366,8 @@ ul {
     font-weight: 500;
     color: white;
     text-align: center;
-    transform: translateY(210%);
-    text-shadow: 0 0 6px rgba(0,0,0,0.8)
+    transform: translateY(375%);
+    text-shadow: 0 0 6px rgba(0,0,0,0.8);
     
 }
 
@@ -445,36 +453,36 @@ ul {
     
     .item.men {
         position: relative;
-        background-image: url("Images/mens-category.jpg");
+        background-image: url("../Images/mens-category.jpg");
         background-repeat: no-repeat;
 }
 
 .item.trends {
     position: relative;
-    background-image: url("Images/trends-category.jpg");
+    background-image: url("../Images/trends-category.jpg");
 
 }
 .item.glasses {
     position: relative;
-    background-image: url("Images/glasses-category.jpg");
+    background-image: url("../Images/glasses-category.jpg");
     
 }
 .item.sale {
     position: relative;
-    background-image: url("Images/sale-category.jpg");
+    background-image: url("../Images/sale-category.jpg");
     
 }
 
 .item.bags{
     position: relative;
-    background-image: url("Images/bags-category.jpg");
+    background-image: url("../Images/bags-category.jpg");
     
     
 }
 
 .item.women{
     position: relative;
-    background-image: url("Images/womens-category.jpg");
+    background-image: url("../Images/womens-category.jpg");
 
 }
 
@@ -543,7 +551,7 @@ section#featured {
     height: 300px;
     text-align: center;
     padding: 50px;
-    background-image: url("Images/wave-bkgd.jpg");
+    background-image: url("../Images/wave-bkgd.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-bottom: 10px solid white;
@@ -573,7 +581,7 @@ section#featured {
     font-weight: 600;
 }
 
- .input-subscribe-button {
+ #input-subscribe-button {
     border: none;
     border-radius: 50px;
     padding: 11px 22px 8px 22px;
@@ -720,7 +728,7 @@ section#featured {
 
     .index-banner img {
       
-        width: 200px;
+        width: 168px;
     }
 
     .index-banner {
@@ -882,11 +890,13 @@ section#featured {
 
 
     .footer-container {
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
     }
  
     .footer-contact-info {
-        margin: 15px;
+        margin: 25px;
         font-size: 16px;
         text-align: left;
         justify-content: flex-start;
@@ -900,28 +910,61 @@ section#featured {
         display: block;
         
     }
+
     
     .social-icons {
         
         font-size: 16px;
+        text-align: end;
+        margin: 50px;
         display: block;
-        align-items: flex-end;
+        
 
     }
 }
 
-@media screen and (min-width:1240px) {
+@media screen and (min-width:1024px) {
 
     .footer-container {
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+
     }
  
     .footer-contact-info {
-        margin: 10px;
+        margin: 35px;
         font-size: 16px;
         text-align: left;
         justify-content: flex-start;
 
     }
 
+    .social-icons {
+        text-align: end;
+        margin: 50px;
+    }
+
 }
+
+
+/* SCREEN READER  */
+
+.screen-reader {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+
+ }
+
+ .screen-reader:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* above all content */
+ }

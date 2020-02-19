@@ -2,8 +2,9 @@
 <html lang="en-us">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="shortcut icon" type="image/png" href="Images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +16,14 @@
         <div class="nav-container">
             <nav>
                 <img src="Images/aloha-logo.svg" alt="aloha" class="Aloha-nav-logo">
+                <a href='#shop' class='screen-reader'>Skip to Shopping</a>
                 <img src="Images/cart-icon.svg" alt="cart" class="Cart-nav-logo">
                 <div class="nav-list">
                     <ul>
-                        <li><a href="#Info">ABOUT</a></li>
-                        <li><a href="#shop">SHOP</a></li>
-                        <li><a href="#featured">FEATURED</a></li>
-                        <li><a href="#updates">UPDATES</a></li>
+                        <li><a href="#Info">About</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#updates">Updates</a></li>
                     </ul>
                 </div>
             </nav>
@@ -32,7 +34,7 @@
         <div class="banner-container">
             <img src="Images/banner-girl.png" alt="girl" class="img-girl">
             <h1 class="banner-text-1">NEW COLLECTION</h1>
-            <h2 class="banner-text-2">Spring/Summer <br>2016</h2>
+            <h2 class="banner-text-2">Spring/Summer 2016</h2>
         </div>
     </section>
 
@@ -124,13 +126,13 @@
 
             <div class="email-input">
                 <input class="email-text-input" type="text" placeholder="Your Email">
-                <input onclick="alert('Thanks for Subscribing!') " type="submit" value="Subscribe"
-                    class="input-subscribe-button">
+                <button  
+                    id="input-subscribe-button">Subscribe</button>
             </div>
         </div>
     </section>
 
-    <div class="footer-container">
+    <footer class="footer-container">
         <div class="footer-contact-info">
             <h3>&copy; 2016 Aloha Apparel Co.<br>Powered by HTML and CSS.</h3>
             <h4>604-604-6040. <a href="#" target="_blank">Info@alohaapparel.com</a></h4>
@@ -138,20 +140,22 @@
         </div>
         <ul class="social-icons">
             <li> <a href="https://www.facebook.com/" target="_blank" class="social-text-names"><i
-                        class="fab fa-facebook-f fa-1x"><span>&nbsp; Facebook</span></i></li></a>
+                        class="fab fa-facebook-f fa-1x"><span>Facebook</span></i></li></a>
             <li> <a href="https://www.twitter.com/" target="_blank" class="social-text-names"><i
-                        class="fab fa-twitter fa-1x"><span>&nbsp; Twitter</span></i></a></li>
+                        class="fab fa-twitter fa-1x"><span>Twitter</span></i></a></li>
             <li><a href="https://www.instagram.com/" target="_blank" class="social-text-names"><i
-                        class="fab fa-instagram fa-1x"><span>&nbsp; Instagram</span></i></a></li>
+                        class="fab fa-instagram fa-1x"><span>Instagram</span></i></a></li>
             <li><a href="https://www.pinterest.ca/" target="_blank" class="social-text-names"><i
-                        class="fab fa-pinterest fa-1x"><span>&nbsp; Pinterest</span></i></a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g fa-1x" class="social-text-names"><span>&nbsp; Google
+                        class="fab fa-pinterest fa-1x"><span>Pinterest</span></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g fa-1x" class="social-text-names"><span> Google
                             +</span></i></a></li>
         </ul>
-    </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/3120b452eb.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js'></script>
+    <script src='Js/main.js'></script>
 </body>
 
 </html>
