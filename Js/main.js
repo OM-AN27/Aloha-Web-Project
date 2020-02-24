@@ -10,8 +10,9 @@ function valEmail(email){
     event.preventDefault();
     if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email) ) {
         alert('Thanks for subscribing');
-    }else
+    }else {
     alert(' A valid Email is required');
+    }
 }
 
 });

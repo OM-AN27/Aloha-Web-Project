@@ -288,6 +288,7 @@ ul {
     justify-content: space-around;
 }
 
+
 .nav-list {
     border-top: 1px solid #d7d7d7;
     width: 100%;
@@ -918,12 +919,59 @@ section#featured {
         text-align: end;
         margin: 50px;
         display: block;
-        
+        line-height: 30px;
 
+    }
+
+    .social-icons a {
+        text-decoration: none;
+    }
+
+    .one:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f39e';
+        padding-right: 5px;
+        font-weight: 900;
+    }
+
+    .two:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f099';
+        padding-right: 5px;
+
+
+
+    }
+    .three:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f16d';
+        padding-right: 5px;
+
+
+        
+    }
+    .four:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f0d2';
+        padding-right: 5px;
+
+
+        
+    }
+    .five:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f0d5';
+        padding-right: 5px;
+
+
+        
     }
 }
 
 @media screen and (min-width:1024px) {
+
+
+
 
     .footer-container {
         display: grid;
@@ -943,9 +991,58 @@ section#featured {
     .social-icons {
         text-align: end;
         margin: 50px;
+        line-height: 30px;
     }
 
+    .social-icons a {
+        text-decoration: none;
+    }
+
+    .one:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f39e';
+        padding-right: 5px;
+        font-weight: 900;
+    }
+
+    .two:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f099';
+        padding-right: 5px;
+
+
+
+    }
+    .three:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f16d';
+        padding-right: 5px;
+
+
+        
+    }
+    .four:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f0d2';
+        padding-right: 5px;
+
+
+        
+    }
+    .five:before {
+        font-family: "Font Awesome 5 Brands"; 
+        content: '\f0d5';
+        padding-right: 5px;
+
+
+        
+    }
+
+  
 }
+
+/* FOOTER SOCIAL ICONS  */
+
 
 
 /* SCREEN READER  */
